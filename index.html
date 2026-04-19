@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>April Joy's Birthday Celebration</title>
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= PASSWORD GATE ================= -->
+<div id="password-overlay" class="password-overlay">
+    <div class="password-card">
+        <h2>🔐 Private Celebration</h2>
+        <p>Please enter the password to continue.</p>
+        <input type="password" id="password-input" placeholder="Enter password">
+        <button id="password-submit">Enter</button>
+        <div id="password-error" class="error-message"></div>
+    </div>
+</div>
+
+<!-- ================= MAIN WEBSITE CONTENT ================= -->
+<div id="main-content" style="display: none;">
+    <!-- Floating Music Button (right side) -->
+    <div id="floating-music-btn" class="floating-music-btn">
+        <i class="fas fa-music"></i>
+        <span class="music-tooltip">Play Birthday Melody</span>
+    </div>
+    <audio id="birthday-music" loop>
+        <source src="mau pa" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-link active">🏠 Home</a>
+            <a href="#about" class="nav-link">💖 About</a>
+            <a href="#wish" class="nav-link">💌 Wish</a>
+        </div>
+    </nav>
+
+    <main class="birthday-card">
+        <!-- ================= HOME SECTION ================= -->
+        <section id="home" class="section">
+            <div class="hero">
+                <h1>🎉 Happy Birthday, <span class="accent-text">Ate April!</span> 🎉</h1>
+                <div class="subhead">
+                    <i class="fas fa-sun" style="color: #f8c150; margin-right: 8px;"></i> 
+                    You're sunshine and soul – today we celebrate YOU.
+                </div>
+                <div id="countdown" class="countdown-box"></div>
+            </div>
+
+            <!-- Icon grid – traits that celebrate April Joy -->
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <i class="fas fa-heart"></i>
+                    <span>LOVING</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-laugh-beam"></i>
+                    <span>JOYFUL</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span>KIND</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>BUDOL QUEEN</span>
+                </div>
+            </div>
+
+            <!-- Celebrate button (confetti) -->
+            <div class="action-area">
+                <button class="btn-gold" id="celebrateBtn">
+                    <i class="fas fa-champagne-glasses"></i> Celebrate!
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Balloons animation -->
+            <div class="balloons">
+                <div class="balloon"></div>
+                <div class="balloon"></div>
+                <div class="balloon"></div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT SECTION ================= -->
+        <section id="about" class="section">
+            <h2 class="section-title">✨ About April Joy ✨</h2>
+            <div class="message-box">
+                <p>
+                    <i class="fas fa-quote-left" style="color: #f8c150; opacity: 0.7; margin-right: 6px;"></i>
+                    Our dearest April Joy, on your special day, I wanted to remind you how much light you bring into us. 
+                    You're the sister who makes every moment brighter, and every laugh louder. 
+                    Here's to more laughs, more budol, and more of your beautiful smile. 🍰✨
+                </p>
+                <div class="signature">
+                    <i class="fas fa-heart"></i> Your loving family, BCCC 💕
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= WISH SECTION ================= -->
+        <section id="wish" class="section">
+            <h2 class="section-title">💌 Heartfelt Wishes 💌</h2>
+            <div class="wish-grid">
+                <!-- Wish Card 1 -->
+                <div class="wish-card">
+                    <div class="wish-photo">
+                        <img src= "images/1.jpg ">
+                    </div>
+                    <p class="wish-text">"Happy Birthday April! 🎂✨ 😁 O-tanjoubi omedetou! Sa future pirate king ng BCCC haha at sa Starlight Anya ng BCCC. As a fellow anime enthusiast and cosplay buddy, I am grateful and blessed to have shared my hobbies with you, para kang little sister ko na I never had before. May we have more “Cost-Plays” in the future kahit wala na tayong trabaho for now HAHA. But aside from those hobbies, 
+Here’s a verse just for you: “She is clothed with strength and dignity; she can laugh at the days to come.” — Proverbs 31:25 I Pray that you grow even more in God, find purpose in Him and be filled with the Holy Spirit! Again Happy Birthday! "</p>
+                    <p class="wish-author">— KUYA RAEL</p>
+                </div>
+                <!-- Wish Card 2 -->
+                <div class="wish-card">
+                    <div class="wish-photo">
+                        <img src="">
+                    </div>
+                    <p class="wish-text">"To Ate April :
+  Hello my Mother in Christ .. ito na nga ! Sabi nila, age is just a number... but in your case, it's a big number! HAHAHAH Joke lngs .. well ang masasabi ko lng na Be Strong and Courageous Woman In Christ Palagi , and also always dependent sa Lord Hindi sa kaniya .. emek pero seriously maging dependent ka Sa Lord and also .. sanay Yung lahat mga wishes mo matupad ... Depende sa Kalooban ng Lord .. AMEN Yan lngs and Happy Birthday 🎂🎈 "</p>
+                    <p class="wish-author">— Chrysanthemums </p>
+                </div>
+                <!-- Wish Card 3 -->
+                <div class="wish-card">
+                    <div class="wish-photo">
+                        <img src="">
+                    </div>
+                    <p class="wish-text">"Happy Birthday po ate April! Thank you po sa pagtuturo saakin especially saakin dahil sa pagtuturo saakin ng word of God nag start na po akona magkaroon ng time para kay God
+                        and you help me po na makilala ng husto si Lord thankyou so much po. May God bless you and fill your life with hope and joyfulness and may your life be as bright and beautiful as your smile thank you po ate April and HAPPY BIRTHDAY PO ULITT🥹🫰"</p>
+                    <p class="wish-author">—JAJA  </p>
+                </div>
+                <!-- Wish Card 4 (Special) -->
+                <div class="wish-card special">
+                    <div class="wish-photo">
+                        <img src="">
+                    </div>
+                    <p class="wish-text">"Haiii, Ate April!! Happy happyyyy birthday!!! Dai ko aram sasabihon ko HAHAHAHA. Basta happy birthday po:)) mabuhay ka hanggat gusto mo HAHAHAHAHHA. emeee^^ Pagpalain ka nawa saiyong lahat ng plano sa buhay, dawa pati su dai mo planado haha. Kidding aside, I hope you continually serve God with all your heart! God bless u! He loves you sooooo matsssss!!!! pibertdeyyyyyyyyyyyyyyyyyyy!"</p>
+                    <p class="wish-author">— Nicole</p>
+                </div>
+            </div>
+
+            <div class="wish-card">
+                <p class="wish-text">"PiBirthday ate April!!!</p>
+                <p class="wish-author">-Jerwin</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="footer-note">
+            <span><i class="far fa-heart"></i> gawa ni nikol para sa nag-iisang OA ng BCCC</span>
+            <span class="date"><i class="fas fa-birthday-cake"></i> April Joy Fernandez ^_^</span>
+        </div>
+    </main>
+</div>
+
+<!-- Canvas for confetti -->
+<canvas id="confetti-canvas"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
